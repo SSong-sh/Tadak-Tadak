@@ -4,21 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/front/css/style.css">
+    <script src="https://kit.fontawesome.com/cc6d0ced3f.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-     <div id="header">
-        <div id="change_mode">
-
-            <input type="checkbox" id="toggle" hidden>
-    
-            <label for="toggle" class="toggle_switch">
-                <span class="toggle_handler">
-    
-                </span>
-            </label>
-
-        </div>
+     <header id="header">
+       
         <div id="search">
             <a href="#" class="logo">
                 <span id="logo_text">타닥타닥</span>
@@ -31,6 +23,17 @@
                 <input class="search-text" type="text" placeholder="지역을 선택해 주세요." spellcheck="false" maxlength="30">
                 <button type="submit" class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
+            <div id="change_mode">
+
+                <input type="checkbox" id="toggle" hidden>
+        
+                <label for="toggle" class="toggle_switch">
+                    <span class="toggle_handler">
+        
+                    </span>
+                </label>
+    
+            </div>
 
         </div>
         <div id="menu">
@@ -81,7 +84,7 @@
 
         </div>
 
-    </div>
+    </header>
 
 
 
@@ -104,12 +107,12 @@
                      <li>연락처</li>
                      <li>광고문의</li>
                      <li>멤버</li>
-                     <li>버그 제보</li>
+                     <li>버그제보</li>
                  </ul>
              <div class="footer-privacy">
                  <ul>
-                     <li>개인정보 처리 방침</li>
-                     <li>통합 서비스이용 약관</li>
+                     <li><a href="">개인정보 처리 방침</a></li>
+                     <li><a href="">통합 서비스이용 약관</a></li>
                  </ul>
                 </div>
              </div>
@@ -123,5 +126,20 @@
          <div></div>
         </div>
      </footer>
+
+
+     
+     <script>
+
+        const toggleList = document.querySelectorAll(".toggle_switch");
+
+        toggleList.forEach(($toggle) => {
+            $toggle.onclick = () => {
+                $toggle.classList.toggle('active');
+            }
+        });
+        
+
+    </script>
 </body>
 </html>
