@@ -13,7 +13,8 @@
     font-style: normal;
 }
 
-* {
+
+* :not(i) {
     font-family: 'GmarketSansMedium' !important;
 }
 
