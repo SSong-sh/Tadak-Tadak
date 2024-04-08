@@ -6,8 +6,17 @@
 }
 
 
-
 #footer-wrap {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    flex-grow: 2 1;
+}
+
+/* #footer-wrap {
     width: 100%;
     position: absolute;
     bottom: 0;    
@@ -15,7 +24,7 @@
     justify-content: center;
     border: 1px solid black;
     flex-grow: 2 1;
-}
+} */
 
 .footer-header {
     display: flex;
