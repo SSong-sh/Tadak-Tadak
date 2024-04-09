@@ -1,0 +1,23 @@
+article {
+    margin-top: 40px;
+}
+
+
+.board_title {
+    text-align: center;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+   /*align-items: center; */
+}
+
+.title{
+    width: 1000px;
+    /* border: 1px solid black; */
+    height: 50px;
+    border-radius: 20px;
+    background-color: #F6995C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

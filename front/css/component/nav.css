@@ -1,12 +1,11 @@
 
 
 
-#header{
-  
+#header{  
     display: flex;
     flex-direction: column;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     justify-content: center;
     top: 0;
     /* border: 1px solid black; */
@@ -52,7 +51,7 @@
     /* margin: 0 50px; */
     width: 600px;
     justify-content: center;
-    
+    background-color: transparent;
 }
 
 
@@ -117,7 +116,7 @@
 
 
 #nav{
-   
+
     list-style: none; 
     display: flex;
     vertical-align: auto;
@@ -125,9 +124,6 @@
     padding-left: 0;
     margin-top: 10px;
     flex-wrap: wrap;
-
-
-
 }
 
 .item{

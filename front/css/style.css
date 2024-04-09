@@ -1,10 +1,12 @@
+@import url("/front/css/reset.css");
 
-@import "/front/css/component/footer.css";
+/* component */
+@import url("/front/css/component/footer.css");
+@import url("/front/css/component/nav.css");
 
-@import "/front/css/component/nav.css";
-
-@import "/front/css/reset.css";
-
+/* screen */
+@import url("/front/css/screen/main.css");
+@import url("/front/css/screen/board.css");
 
 @font-face {
     font-family: 'GmarketSansMedium';
@@ -13,8 +15,6 @@
     font-style: normal;
 }
 
-
-* :not(i) {
-    font-family: 'GmarketSansMedium' !important;
+body {
+    font-family: 'GmarketSansMedium', sans-serif; /* '*' 선택자 대신 'body' 선택자 사용 */
 }
-
