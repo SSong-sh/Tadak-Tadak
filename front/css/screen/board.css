@@ -2,14 +2,17 @@ article {
     margin-top: 40px;
 }
 
+#board_wrap {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .board_title {
-    text-align: center;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
-   /*align-items: center; */
 }
+
 
 .title{
     width: 1000px;
@@ -20,4 +23,95 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#free_board_list_form {
+    display: flex;
+    justify-content: center;
+}
+
+.board_search {
+   display: flex;
+   justify-content: center;
+}
+
+.short {
+    /* padding-left: 40px; */
+    /* border: 1px solid black; */
+    padding-left: 20px;
+    width: 500px;
+    margin-top: 30px;
+}
+
+.board_sort {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.board_sort > a {
+    margin-right: 15px;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+#free_board_list {
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    width: 1000px;
+    margin-top: 20px;
+    border-top: 1px solid #161616;
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+
+#free_board_list th {
+    padding: 10px;
+}
+
+#free_board_list tr:not(:nth-child(1)) {
+    border-top: 1px solid#D9D9D9;
+    border-bottom: 1px solid#D9D9D9;
+    
+}
+
+#free_board_list tr td {
+    /* border: 1px solid#D9D9D9; */
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Board input */
+#free_board_input_form {
+    display: flex;
+    border: 1px solid black;
+    width: 900px;
+    margin-left: 55px;
+    margin-top: 50px;
+    padding: 50px 30px;
+}
+
+.subtitle {
+    margin-top: 30px;
+}
+
+.input_title input {
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 30px;
+
+}
+
+.subtitle span{
+   margin-left: 55px;
+   font-size: 20px;
+}
+
+
+.input_title {
+
+
 }
