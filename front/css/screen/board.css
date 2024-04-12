@@ -1,3 +1,5 @@
+
+
 article {
     margin-top: 40px;
 }
@@ -5,6 +7,7 @@ article {
 #board_wrap {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
@@ -85,12 +88,21 @@ article {
 
 /* Board input */
 #free_board_input_form {
-    display: flex;
-    border: 1px solid black;
-    width: 900px;
+    width: 930px;
     margin-left: 55px;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 50px 30px;
+    border: 1px solid #767676;
+    border-radius: 20px;
+
+}
+
+.free_board_input {
+    padding-left: 20px;
+}
+
+.free_board_input  p {
+    margin-bottom: 10px;
 }
 
 .subtitle {
@@ -100,9 +112,10 @@ article {
 .input_title input {
     width: 600px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding-left: 30px;
-
+    border: none;
+    border: 1px solid #767676;
 }
 
 .subtitle span{
@@ -110,8 +123,115 @@ article {
    font-size: 20px;
 }
 
+.input_main {
+    margin-top: 30px;
+}
 
-.input_title {
+textarea {
+    resize: none;
+    border-radius: 20px;
+    padding:20px 30px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.submit_buttons {
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+}
+
+.submit_buttons input {
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.submit_buttons input:first-child{
+    background-color: #F6995C;
+    border: none;
+    font-weight: bold;
+}
+
+.submit_buttons input:last-child{
+    background-color: transparent;
+    border-color: #F6995C;
+    font-weight: bold;
+}
 
 
+
+
+
+/* board 세부사항 */
+.detail_wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.detail_info {
+    display: flex;
+    border-top: 1px solid #767676;
+    border-bottom: 1px solid #767676;
+    width: 950px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+
+#free_board_detail_form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.input_detail {
+    width: 950px;
+    padding: 20px;
+    border: 1px solid  #767676;
+    height: 500px;
+    overflow: auto;
+}
+
+.recommend_buttons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.recommend_buttons button {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 1px solid  #767676;
+    border-radius: 25px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.like button{
+    margin-right: 30px;
+}
+
+.dislike button{
+    margin-left: 30px;
+    padding-top: 5px;
+}
+
+.comment-wrap {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid  #767676;
+    width: 1000px;
+    margin-top: 50px;
+}
+
+.comment_info {
+    display: flex;
+    
 }
